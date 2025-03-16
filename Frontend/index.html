@@ -1,17 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+/* Features Section Styles */
+.features {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.feature {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.feature p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* About Section Styles */
+.about {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Contact Section Styles */
+footer {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+footer .icons {
+    margin-top: 15px;
+}
+
+footer .icons i {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+footer .icons i:hover {
+    color: #ffdd57; /* Change color on hover */
+}
+
+ </style>
+ <br>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOLANA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <script src="script.js" defer></script>
     <link rel="shortcut icon" href="images/logo.png">
-    <!----Google fonts-------->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Courgette&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-    <!----Font awesome-------->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -20,15 +113,16 @@
         <nav>
             <ul id="nav">
                 <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
-                <li><a href="index.html" class="navbaractive">Home</a></li>                
+                <li><a href="index.html" class="navbaractive">Home</a></li>
                 <li><a href="course.html">Courses</a></li>
                 <li><a href="quiz.html">Quizzes</a></li>
                 <li><a href="book.html">Books</a></li>
-                <li><a href="">Signup</a>
+                <li><a href="signup.html">Signup</a></li>
             </ul>
             <i class="fa-solid fa-bars navicon" onclick="showmenu()"></i>
         </nav>
     </header>
+    
     <section>
         <div class="home">
             <div class="home-left">
@@ -37,41 +131,42 @@
             </div>
         </div>
     </section>
+    
     <section>
         <div class="home2">
             <h1>Courses</h1>
             <div class="home-courses">
                 <div class="home-courses-card">
                     <h1>Physics</h1>
-                    <p>is defined as the science of matter, motion, and energy. Its laws are typically expressed with economy and precision in the language of mathematics.</p>
+                    <p>Physics is the science of matter, motion, and energy. Its laws are typically expressed with economy and precision in the language of mathematics.</p>
                     <a href="course.html"><button>Show More</button></a>
                 </div>
                 <div class="home-courses-card">
-                    <h1>Maths</h1>
-                    <p>is the science and study of quality, structure, space, and change. Mathematicians seek out patterns, formulate new conjectures, and establish truth by rigorous deduction from appropriately chosen axioms and definitions.</p>
+                    <h1>Mathematics</h1>
+                    <p>Mathematics is the science and study of quantity, structure, space, and change. Mathematicians seek patterns, formulate conjectures, and establish truths through rigorous deduction.</p>
                     <a href="course.html"><button>Show More</button></a>
-
                 </div>
                 <div class="home-courses-card">
                     <h1>Economics</h1>
-                    <p>is the study of scarcity and its implications for the use of resources, production of goods and services, growth of production and welfare over time, and a great variety of other complex issues of vital concern to society.</p>
+                    <p>Economics is the study of scarcity and its implications for resource use, production of goods and services, and welfare over time, addressing complex issues of vital concern to society.</p>
                     <a href="course.html"><button>Show More</button></a>
-
                 </div>
             </div>
         </div>
     </section>
+    
     <section>
         <div class="home-quiz">
             <div class="home-quiz-left">
-                <img src="images/home-quiz.jpg" alt="">
+                <img src="images/home-quiz.jpg" alt="Quizzes Image">
             </div>
             <div class="home-quiz-right">
                 <h1>Quizzes</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione laborum vitae odit tempore, deleniti facere nam error rem quia labore suscipit totam natus unde. Aperiam odio similique, earum optio repudiandae nobis alias exercitationem laboriosam porro ab, error fugit eos qui doloremque doloribus harum, amet quo voluptatem sed incidunt excepturi. Nobis?</p>
+                <p>Engage with our interactive quizzes designed to test your knowledge across various subjects. Challenge yourself and learn in a fun and dynamic way!</p>
             </div>
         </div>
     </section>
+    
     <section>
         <div class="teachers">
             <div class="content">
@@ -80,19 +175,38 @@
             </div>
         </div>
     </section>
-    <footer>
-    <div class="footer">
-        <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-tiktok"></i>
-            <i class="fa-brands fa-youtube"></i>
+    
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature">
+                <h3>Real-Time Payments</h3>
+                <p>Pay by the second, minute, or hour for your streaming experience.</p>
+            </div>
+            <div class="feature">
+                <h3>Seamless Integration</h3>
+                <p>Integrate easily with your favorite platforms and services.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Transactions</h3>
+                <p>Built on Solana and Anchor for fast and secure payments.</p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team of developers and music lovers dedicated to revolutionizing the streaming industry. Our mission is to provide a platform where users can enjoy content without the constraints of traditional subscriptions.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@streamandpay.com</p>
+            <p>Follow us on social media!</p>
+        </div>
     </footer>
 </body>
 </html>
