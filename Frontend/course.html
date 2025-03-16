@@ -1,10 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <style>
+/* General Styles */
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Courses Section Styles */
+.courses {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.courses h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.courses-warpper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.courses-card {
+    background-color: rgb(255, 253, 253);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.courses-card:hover {
+    transform: scale(1.05);
+}
+
+.courses-card img {
+    width: 100%;
+    height: auto;
+}
+
+.white-text {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    margin: 10px 0;
+}
+
+.black-text {
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Contact Section Styles */
+.teachers {
+    background-color: #007BFF;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.teachers h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.teachers button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.teachers button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .icons {
+    margin-top: 10px;
+}
+
+.footer .icons i {
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.footer .icons i:hover {
+    color: #ffdd57; /* Change color on hover */
+}
+
+</style>
+<br>
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOLANA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <script src="script.js" defer></script>
     <link rel="shortcut icon" href="images/logo.png">
     <!----Google fonts-------->
@@ -28,53 +182,55 @@
             <i class="fa-solid fa-bars navicon" onclick="showmenu()"></i>
         </nav>
     </header>
+    
     <section>
         <div class="courses">
             <h1>Courses</h1>
             <div class="courses-warpper">
-                    <div class="courses-card">
-                        <img src="images/physics-home.jpg" alt="">
-                        <h1 class="white-text">Physics</h1>
-                    </div>
-                    <div class="courses-card">
-                        <img src="images/chemistry-home.jpg" alt="">
-                        <h1 class="black-text">Chemistry</h1>
-                    </div>
-                    <div class="courses-card">
-                        <img src="images/biology-home.jpg" alt="">
-                        <h1 class="black-text">Biology</h1>
-                    </div>
-                    <div class="courses-card">
-                        <img src="images/maths-home.jpg" alt="">
-                        <h1 class="white-text">Maths</h1>
-                    </div>
-                    <div class="courses-card">
-                        <img src="images/english-home.jpg" alt="">
-                        <h1 class="white-text">English</h1>
-                    </div>
-                    <div class="courses-card">
-                        <img src="images/amharic-home.jpg" alt="">
-                        <h1 class="black-text">Amharic</h1>
-                    </div>
-                    <div class="courses-card">
-                        <img src="images/geography-home.jpg" alt="">
-                        <h1 class="white-text">Geography</h1>
-                    </div>
-                    <div class="courses-card">
-                        <img src="images/history-home.jpg" alt="">
-                        <h1 class="white-text">History</h1>
-                    </div>
-                    <div class="courses-card">
-                        <img src="images/business-home.jpg" alt="">
-                        <h1 class="black-text">Business</h1>
-                    </div>
-                    <div class="courses-card">
-                        <img src="images/economics-home.jpg" alt="">
-                        <h1 class="black-text">Economics</h1>
-                    </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1517841905240-4729888e0b2f" alt="Physics">
+                    <h1 class="white-text">Physics</h1>
+                </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1581093588401-9c7e5c6d8c20" alt="Chemistry">
+                    <h1 class="black-text">Chemistry</h1>
+                </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1591400815465-bf9b656b5eaf" alt="Biology">
+                    <h1 class="black-text">Biology</h1>
+                </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1591052261489-9d5e2e3e4a1a" alt="Maths">
+                    <h1 class="white-text">Maths</h1>
+                </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1581093588401-9c7e5c6d8c20" alt="English">
+                    <h1 class="white-text">English</h1>
+                </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1605867185825-6e4c7e4e9d1b" alt="Amharic">
+                    <h1 class="black-text">Amharic</h1>
+                </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Geography">
+                    <h1 class="white-text">Geography</h1>
+                </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1517632418768-3a0ba1b6e79a" alt="History">
+                    <h1 class="white-text">History</h1>
+                </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1607526255902-6f4c4e1e0a54" alt="Business">
+                    <h1 class="black-text">Business</h1>
+                </div>
+                <div class="courses-card">
+                    <img src="https://images.unsplash.com/photo-1504386107627-0d8e3b8c3c2a" alt="Economics">
+                    <h1 class="black-text">Economics</h1>
+                </div>
             </div>
         </div>
     </section>
+
     <section>
         <div class="teachers">
             <div class="content">
@@ -83,19 +239,20 @@
             </div>
         </div>
     </section>
+
     <footer>
-    <div class="footer">
-        <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-tiktok"></i>
-            <i class="fa-brands fa-youtube"></i>
+        <div class="footer">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
         </div>
-    </div>
     </footer>
 </body>
 </html>
